@@ -96,6 +96,7 @@ CLASS lhc_zfi003_dd_behaviour IMPLEMENTATION.
 
     ENDIF.
 
+*-->BTOK 03.09.2026
     IF reported-behaviour IS INITIAL.
       APPEND INITIAL LINE TO lt_je_deep ASSIGNING FIELD-SYMBOL(<je_deep>).
       <je_deep>-%cid = lv_cid.
