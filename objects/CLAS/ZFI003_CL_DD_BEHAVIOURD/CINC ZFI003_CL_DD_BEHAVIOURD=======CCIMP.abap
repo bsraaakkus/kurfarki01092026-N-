@@ -102,12 +102,15 @@ CLASS lhc_zfi003_dd_behaviour IMPLEMENTATION.
     SELECT SINGLE DOCUMENTREFERENCEID,
                   ACCOUNTINGDOCUMENT
       FROM I_JOURNALENTRY
-      WHERE DOCUMENTREFERENCEID eq @ls_data-%param-doc_reference
-      INto @DATA(ls_referance).
+      WHERE DOCUMENTREFERENCEID    eq @ls_data-%param-doc_reference
+        AND CompanyCode            eq @ls_data-%param-com_code
+        AND PostingDate            eq @ls_data-%param-post_date
+        AND AccountingDocumentType eq @ls_data-%param-acc_type
+      INTO @DATA(ls_referance).
 
       if  ls_referance-AccountingDocument IS NOT INITIAL.
 
-        lv_msg = new_message_with_text( text = |{ ls_data-%param-doc_reference } referans numarasıyla { ls_referance-AccountingDocument } doküman numarası kayıt edilmiştir | severity = cl_abap_behv=>ms-error ).
+        lv_msg = new_message_with_text( text = |{ ls_data-%param-doc_reference } referans numarasıyla { ls_referance-AccountingDocument } dokuman numarası kayıt edilmistir | severity = cl_abap_behv=>ms-error ).
 
         APPEND VALUE #( %msg  = lv_msg
                         dummy = 1 ) TO reported-behaviour.
