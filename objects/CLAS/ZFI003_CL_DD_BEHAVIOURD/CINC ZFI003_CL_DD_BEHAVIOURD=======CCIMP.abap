@@ -99,6 +99,9 @@ CLASS lhc_zfi003_dd_behaviour IMPLEMENTATION.
 *---> 9004402960 BTOK&GSEVIM 03.09.2026
     IF ls_data-%param-doc_reference IS NOT INITIAL.
 
+    DATA: lv_part1 TYPE string,
+          lv_part2 TYPE string.
+
     SELECT SINGLE DOCUMENTREFERENCEID,
                   ACCOUNTINGDOCUMENT
       FROM I_JOURNALENTRY
@@ -109,8 +112,13 @@ CLASS lhc_zfi003_dd_behaviour IMPLEMENTATION.
       INTO @DATA(ls_referance).
 
       if  ls_referance-AccountingDocument IS NOT INITIAL.
+       lv_part1 = |{ ls_data-%param-doc_reference } referans numarasıyla|.
+       lv_part1 = |{ lv_part1 WIDTH = 50 }|.
 
-        lv_msg = new_message_with_text( text = |{ ls_data-%param-doc_reference } referans numarasıyla { ls_referance-AccountingDocument } dokuman numarası kayıt edilmistir | severity = cl_abap_behv=>ms-error ).
+       lv_part2 = |{ ls_referance-AccountingDocument } dokuman numarası kayıt edilmistir|.
+
+       lv_msg = new_message_with_text( text = |{ lv_part1 }{ lv_part2 } | severity = cl_abap_behv=>ms-error ).
+*        lv_msg = new_message_with_text( text = |{ ls_data-%param-doc_reference } referans numarasıyla { ls_referance-AccountingDocument } dokuman numarası kayıt edilmistir | severity = cl_abap_behv=>ms-error ).
 
         APPEND VALUE #( %msg  = lv_msg
                         dummy = 1 ) TO reported-behaviour.
