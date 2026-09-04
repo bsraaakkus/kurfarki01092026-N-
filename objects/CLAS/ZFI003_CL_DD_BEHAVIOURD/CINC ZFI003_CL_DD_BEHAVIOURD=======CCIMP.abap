@@ -112,16 +112,18 @@ CLASS lhc_zfi003_dd_behaviour IMPLEMENTATION.
       INTO @DATA(ls_referance).
 
       if  ls_referance-AccountingDocument IS NOT INITIAL.
-       lv_part1 = |{ ls_data-%param-doc_reference } referans numarasıyla|.
-       lv_part1 = |{ lv_part1 WIDTH = 50 }|.
 
-       lv_part2 = |{ ls_referance-AccountingDocument } dokuman numarası kayıt edilmistir|.
-
-       lv_msg = new_message_with_text( text = |{ lv_part1 }{ lv_part2 } | severity = cl_abap_behv=>ms-error ).
 *        lv_msg = new_message_with_text( text = |{ ls_data-%param-doc_reference } referans numarasıyla { ls_referance-AccountingDocument } dokuman numarası kayıt edilmistir | severity = cl_abap_behv=>ms-error ).
 
-        APPEND VALUE #( %msg  = lv_msg
-                        dummy = 1 ) TO reported-behaviour.
+        APPEND VALUE #( %msg     = new_message_with_text(
+                        text     = |{ ls_data-%param-doc_reference } referans numarasıyla|
+                        severity = if_abap_behv_message=>severity-error )
+                        dummy    = 1 ) TO reported-behaviour.
+
+        APPEND VALUE #( %msg     = new_message_with_text(
+                        text     = |{ ls_referance-AccountingDocument } dokuman numarası kayıt edilmistir.|
+                        severity = if_abap_behv_message=>severity-error )
+                        dummy    = 1 ) TO reported-behaviour.
 
       ENDIF.
 
