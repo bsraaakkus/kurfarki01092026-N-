@@ -1,3 +1,5 @@
+*//24.09.2026
+
 CLASS lhc_zfi003_dd_behaviour DEFINITION INHERITING FROM cl_abap_behavior_handler.
   PRIVATE SECTION.
 

@@ -23,7 +23,51 @@
     "CREATE_USER":"SAP_CUSTOMER",
     "CREATE_TIMESTAMP":"+020241003152213",
     "CHANGE_USER":"SAP_CUSTOMER",
-    "CHANGE_TIMESTAMP":"+020241009140353"
+    "CHANGE_TIMESTAMP":"+020261001094459"
+   }
+  ]
+ },
+ {
+  "table":"APS_IAM_W_APPAUI",
+  "data":
+  [
+   {
+    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
+    "UUID":"+hY+jU3XH9Gvr4hhsQDTRQ==",
+    "AUTH_OBJECT":"ZZ_FI_KURF",
+    "AUTH_OBJECT_INST_ID":1,
+    "IBS_SOURCE":"",
+    "STATUS":"U",
+    "INACTIVE":"",
+    "COPIED":"",
+    "IBS_SOURCE_TYPE":""
+   }
+  ]
+ },
+ {
+  "table":"APS_IAM_W_APPAUO",
+  "data":
+  [
+   {
+    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
+    "AUTH_OBJECT":"ZZ_FI_KURF",
+    "STATUS":"U"
+   }
+  ]
+ },
+ {
+  "table":"APS_IAM_W_APPAUV",
+  "data":
+  [
+   {
+    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
+    "UUID":"+hY+jU3XH9Gvr5iInu6zRQ==",
+    "PARENT_ID":"+hY+jU3XH9Gvr4hhsQDTRQ==",
+    "FIELD":"ZZ_BUKRS",
+    "LOW_VALUE":"",
+    "HIGH_VALUE":"",
+    "STATUS":"U",
+    "COPIED":""
    }
   ]
  },
