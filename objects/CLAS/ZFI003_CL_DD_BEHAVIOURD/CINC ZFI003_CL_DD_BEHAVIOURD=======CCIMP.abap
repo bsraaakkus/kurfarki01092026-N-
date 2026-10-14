@@ -43,6 +43,19 @@ CLASS lhc_zfi003_dd_behaviour IMPLEMENTATION.
 
     DATA(ls_data) = VALUE #( keys[ dummy = 1 ] OPTIONAL ).
 
+    AUTHORITY-CHECK OBJECT 'ZZ_FI_KURF'
+        ID 'ZZ_BUKRS' FIELD ls_data-%param-com_code.
+
+      IF sy-subrc <> 0.
+        APPEND VALUE #( dummy = 1 ) TO failed-behaviour.
+        lv_msg = new_message_with_text(
+          text     = |{ ls_data-%param-com_code } şirket kodu için yetkiniz yok.|
+          severity = cl_abap_behv=>ms-error ).
+        APPEND VALUE #( %msg  = lv_msg
+                        dummy = 1 ) TO reported-behaviour.
+        EXIT.
+      ENDIF.
+
     DATA: lt_je_deep TYPE TABLE FOR ACTION IMPORT i_journalentrytp~post,
           lv_cid     TYPE abp_behv_cid.
     TRY.
