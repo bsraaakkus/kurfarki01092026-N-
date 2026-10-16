@@ -23,7 +23,7 @@
     "CREATE_USER":"SAP_CUSTOMER",
     "CREATE_TIMESTAMP":"+020241003152213",
     "CHANGE_USER":"SAP_CUSTOMER",
-    "CHANGE_TIMESTAMP":"+020261016142542"
+    "CHANGE_TIMESTAMP":"+020261016145824"
    }
   ]
  },
@@ -61,12 +61,22 @@
   [
    {
     "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9Gyra700uuzoA==",
+    "UUID":"+hY+jU3XH9GyrkEZn0szow==",
     "PARENT_ID":"+hY+jU3XH9Gvr4hhsQDTRQ==",
     "FIELD":"ZZ_BUKRS",
     "LOW_VALUE":"",
     "HIGH_VALUE":"",
     "STATUS":"U",
+    "COPIED":""
+   },
+   {
+    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
+    "UUID":"+hY+jU3XH9GyrkEZn0tTow==",
+    "PARENT_ID":"+hY+jU3XH9Gvr4hhsQDTRQ==",
+    "FIELD":"ACTVT",
+    "LOW_VALUE":"01",
+    "HIGH_VALUE":"",
+    "STATUS":"G",
     "COPIED":""
    }
   ]
