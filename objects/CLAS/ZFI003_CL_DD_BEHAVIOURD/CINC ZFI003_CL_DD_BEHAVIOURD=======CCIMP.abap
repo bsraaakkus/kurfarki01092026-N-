@@ -43,8 +43,9 @@ CLASS lhc_zfi003_dd_behaviour IMPLEMENTATION.
 
     DATA(ls_data) = VALUE #( keys[ dummy = 1 ] OPTIONAL ).
 
-    AUTHORITY-CHECK OBJECT 'ZZ_FI_KURF'
-        ID 'ZZ_BUKRS' FIELD ls_data-%param-com_code.
+AUTHORITY-CHECK OBJECT 'ZZ_FI_KURF'
+    ID 'ZZ_BUKRS' FIELD ls_data-%param-com_code
+    ID 'ACTVT'    FIELD '01'.
 
       IF sy-subrc <> 0.
         APPEND VALUE #( dummy = 1 ) TO failed-behaviour.

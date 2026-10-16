@@ -7,9 +7,9 @@
     "SRVDNAME":"ZFI003_SD_KUR_FARKID",
     "VERSION":"A",
     "CHANGED_BY":"SAP_CUSTOMER",
-    "CHANGED_ON":"2025-08-18",
-    "CHANGED_AT":"08:43:23",
-    "DT_UUID":"FA163EBBCF7E1FE09F81ECCC543EA597",
+    "CHANGED_ON":"2026-10-16",
+    "CHANGED_AT":"11:46:42",
+    "DT_UUID":"FA163E8D4DD71FD1B2AAE822C605339D",
     "SOURCE_ORIGIN":"0",
     "SRVD_SOURCE_TYPE":"S",
     "ABAP_LANGUAGE_VERSION":"5"
@@ -35,7 +35,7 @@
    {
     "SRVDNAME":"ZFI003_SD_KUR_FARKID",
     "VERSION":"A",
-    "SOURCE":"@EndUserText.label: 'Kur Farkı Service Definition'\r\ndefine service ZFI003_SD_KUR_FARKID {\r\n  expose ZFI003_DD_BEHAVIOURD        as KurFarkiEntity;\r\n  expose ZFI003_DD_CUSTOMER_SHD      as CustomerSH;\r\n  expose ZFI003_DD_SUPPLIER_SHD      as SupplierSH;\r\n  expose ZFI003_DD_GLACCOUNT_SHD     as GLAccountSH;\r\n  expose ZFI003_DD_COST_CENTER_SHD   as CostCenterSH;\r\n  expose ZFI003_DD_PROFIT_CENTER_SHD as ProfitCenterSH;\r\n  expose I_CurrencyStdVH             as Currency;\r\n  expose I_CompanyCodeVH             as CompanyCodeSH;\r\n  expose ZFI003_DD_DOC_TYPE_SHD      as DocTypeSH;\r\n  expose ZFI003_DD_tax_SHD           as TaxSH;\r\n}"
+    "SOURCE":"@EndUserText.label: 'Kur Farkı Service Definition'\r\ndefine service ZFI003_SD_KUR_FARKID {\r\n  expose ZFI003_DD_BEHAVIOURD        as KurFarkiEntity;\r\n  expose ZFI003_DD_CUSTOMER_SHD      as CustomerSH;\r\n  expose ZFI003_DD_SUPPLIER_SHD      as SupplierSH;\r\n  expose ZFI003_DD_GLACCOUNT_SHD     as GLAccountSH;\r\n  expose ZFI003_DD_COST_CENTER_SHD   as CostCenterSH;\r\n  expose ZFI003_DD_PROFIT_CENTER_SHD as ProfitCenterSH;\r\n  expose I_CurrencyStdVH             as Currency;\r\n  expose ZFI003_DD_Company_SHD       as CompanyCodeSH;\r\n  expose ZFI003_DD_DOC_TYPE_SHD      as DocTypeSH;\r\n  expose ZFI003_DD_tax_SHD           as TaxSH;\r\n}"
    }
   ]
  },
@@ -69,15 +69,6 @@
    {
     "SRVDNAME":"ZFI003_SD_KUR_FARKID",
     "SERVICE":"ZFI003_SD_KUR_FARKID",
-    "EXPOSED_ARTIFACT":"I_COMPANYCODEVH",
-    "EXPOSED_ARTIFACT_TYPE":"E",
-    "EXPOSED_ALIAS":"COMPANYCODESH",
-    "EXPOSED_ALIAS_RAW":"CompanyCodeSH",
-    "INCL_SERVICE":""
-   },
-   {
-    "SRVDNAME":"ZFI003_SD_KUR_FARKID",
-    "SERVICE":"ZFI003_SD_KUR_FARKID",
     "EXPOSED_ARTIFACT":"I_CURRENCYSTDVH",
     "EXPOSED_ARTIFACT_TYPE":"E",
     "EXPOSED_ALIAS":"CURRENCY",
@@ -91,6 +82,15 @@
     "EXPOSED_ARTIFACT_TYPE":"E",
     "EXPOSED_ALIAS":"KURFARKIENTITY",
     "EXPOSED_ALIAS_RAW":"KurFarkiEntity",
+    "INCL_SERVICE":""
+   },
+   {
+    "SRVDNAME":"ZFI003_SD_KUR_FARKID",
+    "SERVICE":"ZFI003_SD_KUR_FARKID",
+    "EXPOSED_ARTIFACT":"ZFI003_DD_COMPANY_SHD",
+    "EXPOSED_ARTIFACT_TYPE":"E",
+    "EXPOSED_ALIAS":"COMPANYCODESH",
+    "EXPOSED_ALIAS_RAW":"CompanyCodeSH",
     "INCL_SERVICE":""
    },
    {
@@ -167,8 +167,8 @@
     "SERVICE":"ZFI003_SD_KUR_FARKID",
     "SERVICE_RAW":"ZFI003_SD_KUR_FARKID",
     "SOURCE_TYPE":"S",
-    "DT_UUID":"FA163EBBCF7E1FE09F81ECCC543EA597",
-    "RT_HASH":"A231898A6D51C6C978C64C1B1FCBDD28265B93BA",
+    "DT_UUID":"FA163E8D4DD71FD1B2AAE822C605339D",
+    "RT_HASH":"09B3F3228534178FEA17419923B9E51A7C3EDCF9",
     "GEN_VERSION":"0"
    }
   ]
