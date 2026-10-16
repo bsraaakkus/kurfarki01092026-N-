@@ -7,9 +7,9 @@
     "DCLNAME":"ZFI003_DCL_COMPANY_SHD",
     "AS4LOCAL":"A",
     "AS4USER":"SAP_CUSTOMER",
-    "AS4DATE":"2026-10-15",
-    "AS4TIME":"11:33:45",
-    "SOURCE":"//@EndUserText.label: 'Şirket kodu value help yetki filtresi'\r\n//@MappingRole: true\r\n//define role ZFI003_DCL_COMPANY_SHD {\r\n//    grant\r\n//        select\r\n//            on\r\n//                ZFI003_DD_COMPANY_SHD\r\n//                    where\r\n//                        entity_element_1 = 'literal_value'\r\n//                        or entity_element_2 = aspect user;\r\n//                        \r\n//}\r\n\r\n@EndUserText.label: 'Şirket kodu value help yetki filtresi'\r\n  @MappingRole: true\r\n  define role ZFI003_DCL_COMPANY_SHD {\r\n    grant select on ZFI003_DD_COMPANY_SHD\r\n      where ( CompanyCode ) =\r\n        aspect pfcg_auth( ZZ_FI_KURF, ZZ_BUKRS, ACTVT = '03' );\r\n  }",
+    "AS4DATE":"2026-10-16",
+    "AS4TIME":"07:03:33",
+    "SOURCE":"//@EndUserText.label: 'Şirket kodu value help yetki filtresi'\r\n//@MappingRole: true\r\n//define role ZFI003_DCL_COMPANY_SHD {\r\n//    grant\r\n//        select\r\n//            on\r\n//                ZFI003_DD_COMPANY_SHD\r\n//                    where\r\n//                        entity_element_1 = 'literal_value'\r\n//                        or entity_element_2 = aspect user;\r\n//                        \r\n//}\r\n\r\n@EndUserText.label: 'Şirket kodu value help yetki filtresi'\r\n  @MappingRole: true\r\n  define role ZFI003_DCL_COMPANY_SHD {\r\n    grant select on ZFI003_DD_COMPANY_SHD\r\n      where ( CompanyCode ) =\r\n        aspect pfcg_auth( ZZ_FI_KURF, ZZ_BUKRS, ACTVT = '01' );\r\n  }",
     "PARENTNAME":"",
     "ABAP_LANGUAGE_VERSION":"5"
    }
