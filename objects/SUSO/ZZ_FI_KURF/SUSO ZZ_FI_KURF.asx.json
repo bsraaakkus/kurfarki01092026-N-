@@ -1,5 +1,15 @@
 [
  {
+  "table":"TACTZ",
+  "data":
+  [
+   {
+    "BROBJ":"ZZ_FI_KURF",
+    "ACTVT":"01"
+   }
+  ]
+ },
+ {
   "table":"TADIR",
   "data":
   [
@@ -86,7 +96,7 @@
     "OBJCT":"ZZ_FI_KURF",
     "MODIFIER":"SAP_CUSTOMER",
     "MODDATE":"2026-10-16",
-    "MODTIME":"07:00:58",
+    "MODTIME":"14:18:33",
     "ABAP_LANGUAGE_VERSION":"5"
    }
   ]
