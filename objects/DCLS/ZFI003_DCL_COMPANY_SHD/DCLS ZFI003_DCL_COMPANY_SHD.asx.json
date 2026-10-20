@@ -8,8 +8,8 @@
     "AS4LOCAL":"A",
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"2026-10-20",
-    "AS4TIME":"11:25:37",
-    "SOURCE":"//@EndUserText.label: 'Şirket kodu value help yetki filtresi'\r\n//@MappingRole: true\r\n//define role ZFI003_DCL_COMPANY_SHD {\r\n//    grant\r\n//        select\r\n//            on\r\n//                ZFI003_DD_COMPANY_SHD\r\n//                    where\r\n//                        entity_element_1 = 'literal_value'\r\n//                        or entity_element_2 = aspect user;\r\n//                        \r\n//}\r\n\r\n@EndUserText.label: 'Şirket kodu value help yetki filtresi'\r\n  @MappingRole: true\r\n  define role ZFI003_DCL_COMPANY_SHD {\r\n    grant select on ZFI003_DD_COMPANY_SHD\r\n      where ( CompanyCode ) =\r\n//        aspect pfcg_auth( ZZ_FI_KURF, ZZ_BUKRS, ACTVT = '03' );\r\n        aspect pfcg_auth(F_BKPF_BUK, BUKRS, actvt = '03');\r\n  }\r\n  \r\n",
+    "AS4TIME":"12:34:01",
+    "SOURCE":"//@EndUserText.label: 'Şirket kodu value help yetki filtresi'\r\n//@MappingRole: true\r\n//define role ZFI003_DCL_COMPANY_SHD {\r\n//    grant\r\n//        select\r\n//            on\r\n//                ZFI003_DD_COMPANY_SHD\r\n//                    where\r\n//                        entity_element_1 = 'literal_value'\r\n//                        or entity_element_2 = aspect user;\r\n//                        \r\n//}\r\n\r\n@EndUserText.label: 'Şirket kodu value help yetki filtresi'\r\n  @MappingRole: true\r\n  define role ZFI003_DCL_COMPANY_SHD {\r\n    grant select on ZFI003_DD_COMPANY_SHD\r\n      where ( CompanyCode ) =\r\n        aspect pfcg_auth( ZZ_FI_KURF, ZZ_BUKRS, ACTVT = '03' );\r\n//        aspect pfcg_auth(F_BKPF_BUK, BUKRS, actvt = '03');\r\n  }\r\n  \r\n",
     "PARENTNAME":"",
     "ABAP_LANGUAGE_VERSION":"5"
    }
@@ -24,6 +24,12 @@
     "DCLLANGUAGE":"E",
     "AS4LOCAL":"A",
     "DDTEXT":"Şirket kodu value help yetki filtresi"
+   },
+   {
+    "DCLNAME":"ZFI003_DCL_COMPANY_SHD",
+    "DCLLANGUAGE":"T",
+    "AS4LOCAL":"A",
+    "DDTEXT":""
    }
   ]
  },
