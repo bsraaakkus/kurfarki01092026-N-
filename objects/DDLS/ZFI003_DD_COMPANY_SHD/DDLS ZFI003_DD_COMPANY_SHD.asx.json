@@ -9,7 +9,7 @@
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",
     "AS4TIME":"00:00:00",
-    "SOURCE":"@AbapCatalog.viewEnhancementCategory: [#NONE]\r\n@AccessControl.authorizationCheck:  #NOT_REQUIRED\r\n@EndUserText.label: 'Company code'\r\n@Metadata.ignorePropagatedAnnotations: true\r\n@ObjectModel.usageType:{\r\n    serviceQuality: #X,\r\n    sizeCategory: #S,\r\n    dataClass: #MIXED\r\n}\r\ndefine view entity ZFI003_DD_Company_SHD\r\n  as select from I_CompanyCode\r\n{\r\n\r\n  key CompanyCode,\r\n  CompanyCodeName\r\n\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"I_COMPANYCODE\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
+    "SOURCE":"@AbapCatalog.viewEnhancementCategory: [#NONE]\r\n@AccessControl.authorizationCheck:  #CHECK\r\n@EndUserText.label: 'Company code'\r\n@Metadata.ignorePropagatedAnnotations: true\r\n@ObjectModel.usageType:{\r\n    serviceQuality: #X,\r\n    sizeCategory: #S,\r\n    dataClass: #MIXED\r\n}\r\ndefine view entity ZFI003_DD_Company_SHD\r\n  as select from I_CompanyCode\r\n{\r\n\r\n  key CompanyCode,\r\n  CompanyCodeName\r\n\r\n}\r\n/*+[internal] {\n\"BASEINFO\":\n{\n\"FROM\":\n[\n\"I_COMPANYCODE\"\n],\n\"ASSOCIATED\":\n[],\n\"BASE\":\n[],\n\"ANNO_REF\":\n[],\n\"SCALAR_FUNCTION\":\n[],\n\"VERSION\":0,\n\"ANNOREF_EVALUATION_ERROR\":\"\"\n}\n}*/",
     "PARENTNAME":"",
     "ACTFLAG":"",
     "CHGFLAG":"",
@@ -96,7 +96,7 @@
     "STRUCOBJN":"ZFI003_DD_COMPANY_SHD",
     "NAME":"ACCESSCONTROL.AUTHORIZATIONCHECK",
     "POSITION":4,
-    "VALUE":"#NOT_REQUIRED"
+    "VALUE":"#CHECK"
    },
    {
     "STRUCOBJN":"ZFI003_DD_COMPANY_SHD",
