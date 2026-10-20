@@ -23,7 +23,7 @@
     "CREATE_USER":"SAP_CUSTOMER",
     "CREATE_TIMESTAMP":"+020241003152213",
     "CHANGE_USER":"SAP_CUSTOMER",
-    "CHANGE_TIMESTAMP":"+020261020113003"
+    "CHANGE_TIMESTAMP":"+020261020141719"
    }
   ]
  },
@@ -33,8 +33,8 @@
   [
    {
     "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9GzjzLr+4lTwQ==",
-    "AUTH_OBJECT":"F_BKPF_BUK",
+    "UUID":"+hY+jU3XH9Gzka45QmWzxQ==",
+    "AUTH_OBJECT":"ZZ_FI_KURF",
     "AUTH_OBJECT_INST_ID":1,
     "IBS_SOURCE":"",
     "STATUS":"U",
@@ -50,7 +50,7 @@
   [
    {
     "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "AUTH_OBJECT":"F_BKPF_BUK",
+    "AUTH_OBJECT":"ZZ_FI_KURF",
     "STATUS":"U"
    }
   ]
@@ -61,38 +61,8 @@
   [
    {
     "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9GzjzLr+4lzwQ==",
-    "PARENT_ID":"+hY+jU3XH9GzjzLr+4lTwQ==",
-    "FIELD":"BUKRS",
-    "LOW_VALUE":"",
-    "HIGH_VALUE":"",
-    "STATUS":"U",
-    "COPIED":""
-   },
-   {
-    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9GzjzLr+4mTwQ==",
-    "PARENT_ID":"+hY+jU3XH9GzjzLr+4lTwQ==",
-    "FIELD":"ACTVT",
-    "LOW_VALUE":"01",
-    "HIGH_VALUE":"",
-    "STATUS":"U",
-    "COPIED":""
-   },
-   {
-    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9GzjzLr+4mzwQ==",
-    "PARENT_ID":"+hY+jU3XH9GzjzLr+4lTwQ==",
-    "FIELD":"ACTVT",
-    "LOW_VALUE":"02",
-    "HIGH_VALUE":"",
-    "STATUS":"U",
-    "COPIED":""
-   },
-   {
-    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9GzjzLr+4nTwQ==",
-    "PARENT_ID":"+hY+jU3XH9GzjzLr+4lTwQ==",
+    "UUID":"+hY+jU3XH9Gzkh6h+glTxg==",
+    "PARENT_ID":"+hY+jU3XH9Gzka45QmWzxQ==",
     "FIELD":"ACTVT",
     "LOW_VALUE":"03",
     "HIGH_VALUE":"",
@@ -101,20 +71,10 @@
    },
    {
     "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9GzjzLr+4nzwQ==",
-    "PARENT_ID":"+hY+jU3XH9GzjzLr+4lTwQ==",
-    "FIELD":"ACTVT",
-    "LOW_VALUE":"06",
-    "HIGH_VALUE":"",
-    "STATUS":"U",
-    "COPIED":""
-   },
-   {
-    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9GzjzLr+4oTwQ==",
-    "PARENT_ID":"+hY+jU3XH9GzjzLr+4lTwQ==",
-    "FIELD":"ACTVT",
-    "LOW_VALUE":"10",
+    "UUID":"+hY+jU3XH9Gzkh6h+glzxg==",
+    "PARENT_ID":"+hY+jU3XH9Gzka45QmWzxQ==",
+    "FIELD":"ZZ_BUKRS",
+    "LOW_VALUE":"2000",
     "HIGH_VALUE":"",
     "STATUS":"U",
     "COPIED":""
