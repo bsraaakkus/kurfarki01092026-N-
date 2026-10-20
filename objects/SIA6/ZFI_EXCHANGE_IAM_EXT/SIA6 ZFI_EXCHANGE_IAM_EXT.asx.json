@@ -23,7 +23,7 @@
     "CREATE_USER":"SAP_CUSTOMER",
     "CREATE_TIMESTAMP":"+020241003152213",
     "CHANGE_USER":"SAP_CUSTOMER",
-    "CHANGE_TIMESTAMP":"+020261016145824"
+    "CHANGE_TIMESTAMP":"+020261020113003"
    }
   ]
  },
@@ -33,11 +33,11 @@
   [
    {
     "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9Gvr4hhsQDTRQ==",
-    "AUTH_OBJECT":"ZZ_FI_KURF",
+    "UUID":"+hY+jU3XH9GzjzLr+4lTwQ==",
+    "AUTH_OBJECT":"F_BKPF_BUK",
     "AUTH_OBJECT_INST_ID":1,
     "IBS_SOURCE":"",
-    "STATUS":"G",
+    "STATUS":"U",
     "INACTIVE":"",
     "COPIED":"",
     "IBS_SOURCE_TYPE":""
@@ -50,8 +50,8 @@
   [
    {
     "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "AUTH_OBJECT":"ZZ_FI_KURF",
-    "STATUS":"G"
+    "AUTH_OBJECT":"F_BKPF_BUK",
+    "STATUS":"U"
    }
   ]
  },
@@ -61,9 +61,9 @@
   [
    {
     "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9GyrkEZn0szow==",
-    "PARENT_ID":"+hY+jU3XH9Gvr4hhsQDTRQ==",
-    "FIELD":"ZZ_BUKRS",
+    "UUID":"+hY+jU3XH9GzjzLr+4lzwQ==",
+    "PARENT_ID":"+hY+jU3XH9GzjzLr+4lTwQ==",
+    "FIELD":"BUKRS",
     "LOW_VALUE":"",
     "HIGH_VALUE":"",
     "STATUS":"U",
@@ -71,12 +71,52 @@
    },
    {
     "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9GyrkEZn0tTow==",
-    "PARENT_ID":"+hY+jU3XH9Gvr4hhsQDTRQ==",
+    "UUID":"+hY+jU3XH9GzjzLr+4mTwQ==",
+    "PARENT_ID":"+hY+jU3XH9GzjzLr+4lTwQ==",
     "FIELD":"ACTVT",
     "LOW_VALUE":"01",
     "HIGH_VALUE":"",
-    "STATUS":"G",
+    "STATUS":"U",
+    "COPIED":""
+   },
+   {
+    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
+    "UUID":"+hY+jU3XH9GzjzLr+4mzwQ==",
+    "PARENT_ID":"+hY+jU3XH9GzjzLr+4lTwQ==",
+    "FIELD":"ACTVT",
+    "LOW_VALUE":"02",
+    "HIGH_VALUE":"",
+    "STATUS":"U",
+    "COPIED":""
+   },
+   {
+    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
+    "UUID":"+hY+jU3XH9GzjzLr+4nTwQ==",
+    "PARENT_ID":"+hY+jU3XH9GzjzLr+4lTwQ==",
+    "FIELD":"ACTVT",
+    "LOW_VALUE":"03",
+    "HIGH_VALUE":"",
+    "STATUS":"U",
+    "COPIED":""
+   },
+   {
+    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
+    "UUID":"+hY+jU3XH9GzjzLr+4nzwQ==",
+    "PARENT_ID":"+hY+jU3XH9GzjzLr+4lTwQ==",
+    "FIELD":"ACTVT",
+    "LOW_VALUE":"06",
+    "HIGH_VALUE":"",
+    "STATUS":"U",
+    "COPIED":""
+   },
+   {
+    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
+    "UUID":"+hY+jU3XH9GzjzLr+4oTwQ==",
+    "PARENT_ID":"+hY+jU3XH9GzjzLr+4lTwQ==",
+    "FIELD":"ACTVT",
+    "LOW_VALUE":"10",
+    "HIGH_VALUE":"",
+    "STATUS":"U",
     "COPIED":""
    }
   ]
