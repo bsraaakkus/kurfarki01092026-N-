@@ -5,7 +5,7 @@
   [
    {
     "BROBJ":"ZZ_FI_KURF",
-    "ACTVT":"01"
+    "ACTVT":"03"
    }
   ]
  },
@@ -95,8 +95,8 @@
    {
     "OBJCT":"ZZ_FI_KURF",
     "MODIFIER":"SAP_CUSTOMER",
-    "MODDATE":"2026-10-16",
-    "MODTIME":"14:18:33",
+    "MODDATE":"2026-10-20",
+    "MODTIME":"07:35:39",
     "ABAP_LANGUAGE_VERSION":"5"
    }
   ]

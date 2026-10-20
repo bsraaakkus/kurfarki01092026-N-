@@ -45,7 +45,7 @@ CLASS lhc_zfi003_dd_behaviour IMPLEMENTATION.
 
 AUTHORITY-CHECK OBJECT 'ZZ_FI_KURF'
     ID 'ZZ_BUKRS' FIELD ls_data-%param-com_code
-    ID 'ACTVT'    FIELD '01'.
+    ID 'ACTVT'    FIELD '03'.
 
       IF sy-subrc <> 0.
         APPEND VALUE #( dummy = 1 ) TO failed-behaviour.
