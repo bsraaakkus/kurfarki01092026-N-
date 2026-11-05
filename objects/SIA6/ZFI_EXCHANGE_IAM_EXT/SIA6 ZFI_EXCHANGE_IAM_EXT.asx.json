@@ -23,7 +23,7 @@
     "CREATE_USER":"SAP_CUSTOMER",
     "CREATE_TIMESTAMP":"+020241003152213",
     "CHANGE_USER":"SAP_CUSTOMER",
-    "CHANGE_TIMESTAMP":"+020261020145924"
+    "CHANGE_TIMESTAMP":"+020261020151419"
    }
   ]
  },
@@ -61,7 +61,7 @@
   [
    {
     "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9GzktrQ8AqTyA==",
+    "UUID":"+hY+jU3XH9Gzkx1qJoNTyA==",
     "PARENT_ID":"+hY+jU3XH9GzknJawaqzyA==",
     "FIELD":"ACTVT",
     "LOW_VALUE":"03",
@@ -71,7 +71,7 @@
    },
    {
     "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9GzktrQ8AqzyA==",
+    "UUID":"+hY+jU3XH9Gzkx1qJoNzyA==",
     "PARENT_ID":"+hY+jU3XH9GzknJawaqzyA==",
     "FIELD":"ZZ_BUKRS",
     "LOW_VALUE":"2000",
@@ -81,10 +81,30 @@
    },
    {
     "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
-    "UUID":"+hY+jU3XH9GzktrQ8ArTyA==",
+    "UUID":"+hY+jU3XH9Gzkx1qJoOTyA==",
     "PARENT_ID":"+hY+jU3XH9GzknJawaqzyA==",
     "FIELD":"ZZ_BUKRS",
     "LOW_VALUE":"1000",
+    "HIGH_VALUE":"",
+    "STATUS":"U",
+    "COPIED":""
+   },
+   {
+    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
+    "UUID":"+hY+jU3XH9Gzkx1qJoOzyA==",
+    "PARENT_ID":"+hY+jU3XH9GzknJawaqzyA==",
+    "FIELD":"ZZ_BUKRS",
+    "LOW_VALUE":"2100",
+    "HIGH_VALUE":"",
+    "STATUS":"U",
+    "COPIED":""
+   },
+   {
+    "APP_ID":"ZFI_EXCHANGE_IAM_EXT",
+    "UUID":"+hY+jU3XH9Gzkx1qJoPTyA==",
+    "PARENT_ID":"+hY+jU3XH9GzknJawaqzyA==",
+    "FIELD":"ZZ_BUKRS",
+    "LOW_VALUE":"2200",
     "HIGH_VALUE":"",
     "STATUS":"U",
     "COPIED":""
